@@ -42,6 +42,7 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 8080;
+console.log('PORT env variable:', process.env.PORT);
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 TaskFlow API running on port ${PORT}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
